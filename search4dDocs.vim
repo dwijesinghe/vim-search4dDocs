@@ -1,7 +1,7 @@
 function! Search4dDocs()
   let l:docSearch = s:get_visual_selection()
   let l:docSearch = substitute(l:docSearch," ","\\\%20","g")
-  let docSearchURL = "http://doc.4d.com/SearchResults/" . escape(shellescape(l:docSearch ), "%"). "/736194-0/false.en.html"
+  let docSearchURL = "http://doc.4d.com/4DACTION/SearchResults_mc/" . escape(shellescape(l:docSearch ), "%"). "/1736481-0/false.en.html"
   echo l:docSearchURL
   if l:docSearch != ""
    :sil execute ':!explorer ' . l:docSearchURL
